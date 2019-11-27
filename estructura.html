@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Estructura basica de HTML5</title>
+    <link rel="stylesheet" href="CSS/estilo.css">	
+</head>
+
+<body>
+ 
+    <!-- Cabecera -->
+    <header>
+        <img src="IMG/Html5.jpg" width="300" height="200" alt="logo"/> 
+        <h1>ESTRUCTURA BASICA DE HTML5</h1>
+    </header>
+    
+    <!-- Menus-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estructura.html">Estructura Basica HTML5</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="cursos.html">Curso/Manual/Recursos</a></li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenido -->
+    <section>
+        
+        <h2>Estructura Basica de HTML5</h2>
+        
+        <p id="estructuratext">Un documento HTML(Hyper Text Markup Language o Lenguaje de Marcas de HJipertexto en lengua cervantina) está formado por el DOM (Documento Object Model o Modelo de Objetos de Documentos). Dicho DOM está formado por los objetos u elementos que forman una página web ordenados jerárquicamente cuya estructura básica en HTML5 (en HTML 4.0 o XHTML es más extensa) es la siguiente:</p>
+        
+        <figure>
+            <img src="IMG/Estructura.png" width="300" height="300" alt="foto"/>
+            <figcaption>Figura: <a href="http://manzanaseideas.blogspot.com/2015/01/html5-conceptos-basicos.html">http://manzanaseideas.blogspot.com/2015/01/html5-conceptos-basicos.html</a></figcaption>
+        </figure>
+        
+        <p id="estructuratext">La declaración del tipo de documento, en este caso !DOCTYPE html , indica al navegador web la manera de mostrar la página  y puede afectar al funcionamiento de CSS y Javascript. Por ello hay que incluir siempre la etiqueta de tipo de documento, la estructura está jerarquizada mediante las etiquetas de apertura y cierre (html/html, head/head>, etc). Dichas etiquetas permiten al navegador conocer donde empieza y acaba la instrucción para poder representarla.</p>
+        
+        <h3 id="estructuratext">Qué ofrece HTML5</h3>
+
+        <P id="estructuratext">Lo que ofrece esta nueva versión de HTML lo ha extraído el W3C de las distintas páginas web existentes en la WWW extrayendo de los nombres más usados de los id's de los elementos y que tuviesen un sentido semántico. Veamos a continuación los nuevos elementos más usados:</P>
+        
+        <p id="estructuratext">- header: Cabecera de la página.</p>
+        <p id="estructuratext">- nav: Barra o menú de navegación de la página.</p>
+        <p id="estructuratext">- section: Sección de la página donde van los artículos.</p>
+        <p id="estructuratext">- article: Artículos de la página.</p>
+        <p id="estructuratext">- aside: Nota o explicación. También para agregar contenido secundario como una barra lateral de enlaces.</p>
+        <p id="estructuratext">- figure: Especifican una figura como una imagen, gráfico, foto, etc.</p>
+        <p id="estructuratext">- figcaption: Permite asociar un texto al pie de la etiqueta figure.</p>
+        <p id="estructuratext">- hgroup: Agrupaciones para las etiquetas de encabezado.</p>
+        <p id="estructuratext">- mark: Indica la importancia de un elemento.</p>
+        <p id="estructuratext">- time: Para manejar fechas y horas.</p>
+        <p id="estructuratext">- dialog: Para cuadros de diálogos.</p>
+        <p id="estructuratext">- progress: Para una barra de progreso.</p>
+        <p id="estructuratext">- footer: Pié de lapágina.</p>
+        <p id="estructuratext">- device: Para indicar el tipo de dispositivo a acceder.</p>
+        <p id="estructuratext">- canvas: Para poder realizar dibujos mediante Javascript.</p>
+        <p id="estructuratext">- audio: Para poder reproducir audio en la página.</p>
+        <p id="estructuratext">- video: Para poder reproducir vídeo en la página.</p>
+
+        <h3 id="estructuratext">Etiquetas HTML5</h3>
+
+        <p id="estructuratext">Pasemos a ver las distintas etiquetas básicas para que una página web funcione correctamente:</p>
+        
+        <p id="estructuratext">- !DOCTYPE html: Permite al navegador saber que tiene que a interpretar un documento del tipo HTML o página web. Esto hace que reaccione de una manera predeterminada al código que encuentre a continuación, por ejemplo, sabrá cómo interpretar el código Javascript o CSS.</p>
+        
+        <p id="estructuratext">- html/html: Le indica al navegador que la infrmación del documento está escrita en el lenguaje HTML.</p>
+
+        <p id="estructuratext">- head/head: Indica al navegador que va a interpretar el encabezado de la página HTML o la sección si se ha definido dentro de esta. Aquí se indica la siguiente información:</p>
+
+        <p id="estructuratext">- title/tile: El título de la página. Este valor aparecerá en la parte superior del navegador o en la pestaña pertinente.</p>
+
+        <p id="estructuratext">- link: Indica la hoja de estilo a aplicar. Su formato es: link rel="stylesheet" href=[ruta donde está la hoja de estilo] type="text/css". Podemos ver que la etiqueta posee el cierre al fina de la misma con />. El valor href poseerá la ruta donde está almacenada la hoja de estilo CSS, por ejemplo, href="css/mihoja.css".</p>
+
+        <p id="estructuratext">- style/style: Permite escribir código css directamente en la página, sin necesitar referencia a una hoja de estilo como vimos en el punto anterior. Hay que tener cuidado si usamos esta etiqueta y la del punto anterior, pues si en ambas se intenta modificar el mismo elemento sólo se tendrá en cuenta el estilo de la última etiqueta.</p>
+
+        <p id="estructuratext">- meta: Son etiquetas para metadatos de la página y habrá una por cada tipo de metadatos (autoría, licencia, keywords, etc). Especial interés hay que prestar al tipo de etiqueta keywords pues es el que usan los motores de búsqueda para la indexación de los resultados en sus páginas. Ejemplo: meta name="keywords" content="curso de internet, curs internt". Podemos observar en el ejemplo que los distintos valores van separados por comas y además el segundo posee errores sintácticos, es aposta puesto que el usuario puede teclear mal el texto a buscar en el buscador y de esta forma ayudamos a nuestra página a salir en dicho buscador si la búsqueda mal tecleada coincide con este texto. Hay que tener cuidado con esto porque si lo haces en exceso los motores de búsqueda te penalizarán en la posición. Existen muchos atributos meta con sus distintos valores que veremos en entradas dedicadas a HTML5.</p>
+
+        <p id="estructuratext">- script/script: Para escribir directamente código Javascript que afecte a la página o para hacer una referencia a un fichero Javascript externo. Por ejemplo: script src="http://jquery-1.11.1.min.js"/script</p>
+
+        <p id="estructuratext">- body/body: El cuerpo principal de la página. Es la parte del documento HTML que se mostrará al usuario en el navegador. Posee variedad de etiquetas dependiendo del tipo de elementos que queramos usar.</p>
+
+        <p id="estructuratext">- footer/footer: Indica al navegador que va a interpretar el pié de la página HTML o de la sección si se ha definido dentro de esta. La información indicada en esta parte se refiere a la sección o página donde se ha definido, por ejemplo en el caso de una sección pueden ser las etiquetas a la cual pertenece y en caso de la página lo más normal es que sea el menú principal y los "Términos y Condiciones" de la misma.</p>
+
+    </section>
+    
+    <!-- Contenido relacionado-->
+    <aside>
+        <a class="twitter-timeline" data-height="1000" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/UniversidadUNAD">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </aside>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <h4><a href="https://www.unad.edu.co/" target=»_blank»>UNAD - Universidad Nacional Abierta y a Distancia</a></h4>              
+    </footer>
+
+</body>
+</html>
